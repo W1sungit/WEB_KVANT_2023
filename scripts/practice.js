@@ -2,7 +2,7 @@
 //! Задание 1
 let Name = "Богдан"
 let age = 14 
-let isStudent = True
+let isStudent = true
 
 var grades = [3958, 345, 99999]
 
@@ -14,7 +14,7 @@ console.log(typeof(age))
 console.log(typeof(isStudent))
 console.log(typeof(grades))
 console.log(typeof(students))
-
+console.log('----------------')
 //! Задание 3
 var i = 0
 
