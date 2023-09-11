@@ -1,54 +1,51 @@
-//? код ни разу не запускал 😉
 //! Задание 1
-let Name = "Богдан"
-let age = 14 
-let isStudent = true
+// let Name = "Богдан"
+// let age = 14 
+// let isStudent = true
 
-var grades = [3958, 345, 99999]
+// var grades = [3958, 345, 99999]
 
-var student = ['Коля', 'Петя', 'Вася']
+// var student = ['Коля', 'Петя', 'Вася']
 
 //! Задание 2
-console.log(typeof(Name))
-console.log(typeof(age))
-console.log(typeof(isStudent))
-console.log(typeof(grades))
-console.log(typeof(students))
-console.log('----------------')
+// console.log(typeof(Name))
+// console.log(typeof(age))
+// console.log(typeof(isStudent))
+// console.log(typeof(grades))
+// console.log(typeof(students))
+// console.log('----------------')
 //! Задание 3
-var i = 0
+// var i = 0
 
-while(i <= 3) {
-    console.log(student[i])
-    i++;
-}
+// while(i <= 3) {
+//     console.log(student[i])
+//     i++;
+// }
 
 //! Задание 4 
-var o = 0
-var sum = 0
-var srednee = 0
-
-while(0 <= 4) {
-    i++ 
-    sum += grades[i]
-    srednee = sum / grades.length
-}
+// let sum = 0
+// let srednee = 0
+//     for (let i = 0; i < grades.length; i++) {
+//         sum += grades[i]
+//         srednee += grades[i] / grades.length
+//     }
+//     console.log(sum, srednee)
 
 //! Задание 5
-var a = 0
-var newArray = []
+// var a = 0
+// var newArray = []
 
-while(a <= 4) {
-    i++ 
-    newArray = [grades[i]*10]
-}
+// for (let i = 0; i < grades.length; i++) {
+//     a += grades[i]
+//     newArray = [grades[i]*10]
+// }
 
 //! Задание 6
-var object = {
-    name: 'Валера',
-    age: 15,
-    gradess: grades
-}
+// var object = {
+//     name: 'Валера',
+//     age: 15,
+//     gradess: grades
+// }
 
 //! Задание 7
 class Student {
@@ -56,10 +53,42 @@ class Student {
         this.name = name
         this.age = age
         this.grades = grades
-        this.srednee = srednee
     }
 
-    sredneee() {
-        return srednee
+    avgBall() {
+        for (let i = 0; i < this.grades.length; i++) {
+            summa += this.grades[i]
+            avg_sum = summa / this.grades.length
+        }
+        return avg_sum
     }
 }
+
+let student_8 = new Student('Valera', 19, [54, 63, 96, 10])
+console.log(student_8);
+
+const btn = document.getElementById('hit-2-check')
+const name_student = document.getElementById('name-id')
+const avg_scores = document.getElementById('avg_score')
+const age_student = document.getElementById('age-id')
+const grade = document.getElementById('marks-id')
+
+
+console.log(btn);
+btn.addEventListener('click', () => {
+    avg_scores.innerHTML = `Средний балл оценок: ${student_8.avgBall}`
+    student_8.avgBall = 0
+})
+
+btn.addEventListener('click', () => {
+    name_studen.innerHTML = `Наме ${student_8.name}`
+})
+
+btn.addEventListener('click', () => {
+    age_student.innerHTML = `Лет: ${student_8.age}`
+    grade.innerHTML = `${student_8.grades}`
+})
+
+btn.addEventListener('click', () => {
+    grade.innerHTML = `${student_8.grades}`
+})
