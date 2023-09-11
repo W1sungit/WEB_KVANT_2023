@@ -48,6 +48,7 @@
 // }
 
 //! Задание 7
+let avg_sum = 0
 class Student {
     constructor(name, age, grades){
         this.name = name
@@ -61,34 +62,34 @@ class Student {
             avg_sum = summa / this.grades.length
         }
         return avg_sum
+        console.log(summa)
+        console.log(avg_sum)
     }
 }
 
-let student_8 = new Student('Valera', 19, [54, 63, 96, 10])
+let student_8 = new Student('Валера', 19, [54, 63, 96, 10])
 console.log(student_8);
 
 const btn = document.getElementById('hit-2-check')
 const name_student = document.getElementById('name-id')
 const avg_scores = document.getElementById('avg_score')
 const age_student = document.getElementById('age-id')
-const grade = document.getElementById('marks-id')
+const marks = document.getElementById('marks-id')
 
 
-console.log(btn);
 btn.addEventListener('click', () => {
     avg_scores.innerHTML = `Средний балл оценок: ${student_8.avgBall}`
     student_8.avgBall = 0
 })
 
 btn.addEventListener('click', () => {
-    name_studen.innerHTML = `Наме ${student_8.name}`
+    name_student.innerHTML = `Имя: ${student_8.name}`
+})
+
+btn.addEventListener('click', () => {
+    marks.innerHTML = `Оценки: ${student_8.grades}`
 })
 
 btn.addEventListener('click', () => {
     age_student.innerHTML = `Лет: ${student_8.age}`
-    grade.innerHTML = `${student_8.grades}`
-})
-
-btn.addEventListener('click', () => {
-    grade.innerHTML = `${student_8.grades}`
 })
