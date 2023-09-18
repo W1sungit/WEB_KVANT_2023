@@ -94,3 +94,34 @@ body {
     font-weight: 500;
     line-height: normal;
 }
+.catalog {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    margin-left: 10%;
+}
+
+.Frame250 {
+    display: inline-flex;
+    
+    width: 1110px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.cacti-catalog {
+    color: #2C2D35;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 44px */
+}
+
+.frame249 {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
